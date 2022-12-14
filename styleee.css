@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#fb009f, red);
+    font-family: sans-serif;
+}
+
+.container{
+    text-align: center;
+}
+
+.text{
+    color: #fff;
+    letter-spacing: 1px;
+    margin: 10px;
+}
+
+.title{
+    padding: 30px 0;
+    text-transform: capitalize;
+    font-size: 25px;
+     font-family: 'Rubik Spray Paint', cursive;
+}
+
+.page{
+    width: 320px;
+    background: #f7f1f5;
+    border-radius: 5px;
+    padding-bottom: 15px;
+
+}
+
+form{
+   width: 75%;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   left: 50%;
+   transform: translate(-50%);
+}
+
+form input{
+    margin-bottom: 5px;
+    border: 1px solid rgb(red, green, blue);
+    border-radius: 3px;
+    outline: none;
+}
+
+form input:foucs{
+    border: 1px solid rgba(red, green, blue, alpha);
+    background: #efefef;
+}
+input [type="text"], input[type="password"]{
+   padding-left:10px;
+   position: relative;
+   height: 25px;
+   font-size: 15px;
+}
+
+input::placeholder{
+    font-weight: normal;
+    font-size: 13px;
+    transition: 0.3s ease;
+}
+
+input:focus::placeholder{
+    position: absolute;
+    font-size: 10px;
+    transform: translateY(-13px);
+}
+
+form button{
+    border: none;
+    background: #6604f7;
+    padding: 5px 0;
+    margin-top: 5px;
+    color: #f7f1f5;
+    border-radius: 3px;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    outline: none;
+    cursor: pointer;
+}
+
+form button:active{
+    background: #d70e25;
+    transform: scale(0.995);
+    
+}
+
+form .option{
+    color: #2c5a5a;
+    margin: 10px 0;
+    font-weight: bold;
+    position: relative;
+}
+
+form .option:before{
+    position: absolute;
+    content: '';
+    width: 37%;
+    height: 2px;background: #b6b6b6;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50px;
+}
+
+form .option::after{
+    position: absolute;
+    content: '';
+    width: 37%;
+    height: 2px;background: #b6b6b6;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50px;
+}
+
+
+.fblink{
+   margin-top: 10px;
+   width: 100%;
+}
+.fblink span{
+    font-size: 18px;
+    color: #7c02fe;
+    margin-right: 5px;
+}
+
+.fblink a{
+    text-decoration: none;
+    font-size: blod;
+    color: #100f10;
+}
+
+.forget-id{
+  margin: 15px;
+}
+
+.forget-id a{
+    text-decoration: none;
+    color: #7c02fe;
+    font-size: 12px;
+    font-size: 500;
+}
+
+.page .signup{
+    position: relative;
+    border: 1px solid #c0bbbe;
+    border-radius: 2px;
+    width: 90%;left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+}
+
+.signup{
+    text-align: none;
+    margin: 5px;
+    color: #080808;
+}
+
